@@ -32,6 +32,7 @@
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
+  <p class="ignore-p">ignore</p>
   <van-button type="primary" round block>测试</van-button>
   <van-cell title="选择单个日期" :value="date" @click="show = true" />
   <van-calendar v-model:show="show" @confirm="onConfirm" />
@@ -86,5 +87,13 @@ code {
   padding: 2px 4px;
   border-radius: 4px;
   color: #304455;
+}
+.ignore-p {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 200px;
+  background-color: #eee;
 }
 </style>
