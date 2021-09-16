@@ -6,7 +6,6 @@ import { resolve } from "path";
 export default ({ mode }: ConfigEnv) => {
   // eg: import.meta.env.VITE_BASE_URL -> process.env.VITE_BASE_URL
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
-  process.env;
   return defineConfig({
     resolve: {
       alias: [
